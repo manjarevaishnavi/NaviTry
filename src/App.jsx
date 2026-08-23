@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useMemo, useState,useCallback } from "react";
 import {
   Routes, Route, Link, NavLink, useNavigate, useLocation, useParams
 } from "react-router-dom";
@@ -22,34 +22,51 @@ function App() {
   const [reflections, setReflections] = useState({});
   const [feedback, setFeedback] = useState(null);
 
+  const resetAssessment = useCallback(() => {
+  setAnswers({});
+  setResults(null);
+  }, []);
+
   const value = useMemo(() => ({
     answers, setAnswers, results, setResults,
-    reflections, setReflections, feedback, setFeedback
-  }), [answers, results, reflections, feedback]);
+    reflections, setReflections, feedback, setFeedback, resetAssessment
+  }), [answers, results, reflections, feedback,resetAssessment]);
 
   return (
-    <NavitryContext.Provider value={value}>
-      <div className="app-shell">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/assessment" element={<Assessment />} />
-            <Route path="/processing" element={<Processing />} />
-            <Route path="/results" element={<Results />} />
-            <Route path="/career/:careerId" element={<Career />} />
-            <Route path="/career/:careerId/activity" element={<Activity />} />
-            <Route path="/career/:careerId/reflect" element={<Reflection />} />
-            <Route path="/compare" element={<Compare />} />
-            <Route path="/feedback" element={<Feedback />} />
-            <Route path="/complete" element={<Complete />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </NavitryContext.Provider>
-  );
+  <NavitryContext.Provider value={value}>
+    <div className="app-shell">
+      <main>
+        <Routes>
+
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Home />
+              </>
+            }
+          />
+
+          <Route path="/instructions" element={<Instructions />} />
+          <Route path="/assessment" element={<Assessment />} />
+          <Route path="/processing" element={<Processing />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/career/:careerId" element={<Career />} />
+          <Route path="/career/:careerId/activity" element={<Activity />} />
+          <Route path="/career/:careerId/reflect" element={<Reflection />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/complete" element={<Complete />} />
+          <Route path="*" element={<NotFound />} />
+
+        </Routes>
+      </main>
+
+      <Footer />
+    </div>
+  </NavitryContext.Provider>
+);
 }
 
 function Navbar() {
@@ -67,7 +84,7 @@ function Navbar() {
         <nav className={open ? "nav-links open" : "nav-links"}>
           <NavLink to="/#how-it-works" onClick={() => setOpen(false)}>How It Works</NavLink>
           <NavLink to="/#about" onClick={() => setOpen(false)}>About</NavLink>
-          <Link className="nav-cta" to="/assessment" onClick={() => setOpen(false)}>Start Exploring <ArrowRight size={16}/></Link>
+          <Link className="nav-cta" to="/instructions" onClick={() => setOpen(false)}>Start Exploring <ArrowRight size={16}/></Link>
         </nav>
       </div>
     </header>
@@ -89,7 +106,7 @@ function Home() {
               what they're actually like, and find the next path worth trying.
             </p>
             <div className="hero-actions">
-              <button className="btn btn-primary" onClick={() => navigate("/assessment")}>
+              <button className="btn btn-primary" onClick={() => navigate("/instructions")}>
                 Start Exploring <ArrowRight size={18}/>
               </button>
               <a className="btn btn-secondary" href="#how-it-works">How It Works</a>
@@ -145,6 +162,47 @@ function Home() {
         </div>
       </section>
 
+      <section className="section student-voices">
+  <div className="container narrow">
+
+    <div className="eyebrow">
+      Built from real student voices
+    </div>
+
+    <h2>
+      Choosing a career shouldn't mean choosing blindly.
+    </h2>
+
+    <p className="student-voices-text">
+      Students feedback helped shape NaviTry's approach:
+    </p>
+
+    <p className="student-voices-emphasis">
+      Don't just discover a career that might fit you — explore and
+      experience it first.
+    </p>
+
+    <p className="student-voices-text">
+      Students said they'd value trying a real career activity before
+      making a decision.
+    </p>
+
+    <div className="student-voices-highlight">
+      <p>
+        That's why NaviTry helps you discover, explore, try and reflect
+        before choosing your path.
+      </p>
+    </div>
+
+    <div className="student-voices-action">
+      <Link className="btn btn-primary" to="/instructions">
+        Explore NaviTry <ArrowRight size={18} />
+      </Link>
+    </div>
+
+  </div>
+</section>
+
       <section className="section how" id="how-it-works">
         <div className="container">
           <div className="section-heading centered">
@@ -166,7 +224,7 @@ function Home() {
               </div>
             ))}
           </div>
-          <div className="center-action"><Link className="btn btn-primary" to="/assessment">Start Exploring <ArrowRight size={18}/></Link></div>
+          <div className="center-action"><Link className="btn btn-primary" to="/instructions">Start Exploring <ArrowRight size={18}/></Link></div>
         </div>
       </section>
 
@@ -181,32 +239,141 @@ function Home() {
   );
 }
 
+function Instructions() {
+  const navigate = useNavigate();
+
+  return (
+    <div className="section">
+      <div className="container assessment-wrap">
+
+        <Link className="back-link" to="/">
+  <ArrowLeft size={16} /> Back
+</Link>
+
+        <div className="question-card instructions-card">
+
+          <div className="eyebrow">
+            Before you begin
+          </div>
+
+          <h1>Let's discover how you naturally approach things.</h1>
+
+          <p className="instructions-intro">
+            There are no right or wrong answers. Don't overthink it —
+            choose the option that feels most natural to you.
+          </p>
+
+          <div className="instructions-list">
+
+            <div className="instruction-item">
+              <div>
+                <h3>20 Questions</h3>
+                <p>
+                  You'll answer 20 quick questions about how you think,
+                  create, work and solve problems.
+                </p>
+              </div>
+            </div>
+
+            <div className="instruction-item">
+              <div>
+                <h3>20 seconds per question</h3>
+                <p>
+                  Each question has a 20-second timer. If time runs out,
+                  the assessment automatically moves to the next question.
+                </p>
+              </div>
+            </div>
+
+            <div className="instruction-item">
+              <div>
+                <h3>Go with your first instinct</h3>
+                <p>
+                  Choose the option that feels more like you. Try not to
+                  overthink your answers.
+                </p>
+              </div>
+            </div>
+
+            <div className="instruction-item">
+              <div>
+                <h3>You can skip a question</h3>
+                <p>
+                  If you don't choose an answer before time runs out,
+                  we'll move on to the next question.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="question-footer">
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate("/assessment")}
+            >
+              Begin Assessment <ArrowRight size={17} />
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
 function Assessment() {
   const navigate = useNavigate();
   const { answers, setAnswers } = useNavitry();
   const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState(answers[questions[0].id]?.option || null);
+  const [selected, setSelected] = useState(null);
   const [startedAt, setStartedAt] = useState(Date.now());
-  const [secondsLeft, setSecondsLeft] = useState(5);
+  const [secondsLeft, setSecondsLeft] = useState(20);
 
   const q = questions[current];
   const progress = ((current + 1) / questions.length) * 100;
 
   React.useEffect(() => {
-    setStartedAt(Date.now());
-    setSecondsLeft(5);
-  }, [current]);
+  setSecondsLeft(20);
+}, [current]);
 
   React.useEffect(() => {
-    const timer = setInterval(() => setSecondsLeft(prev => prev > 0 ? prev - 1 : 0), 1000);
-    return () => clearInterval(timer);
-  }, [current]);
+  const timer = setInterval(() => {
+    setSecondsLeft(prev => {
+      if (prev <= 1) {
+        clearInterval(timer);
+
+        
+        if (current === questions.length - 1) {
+          navigate("/processing");
+        } else {
+          const nextQ = questions[current + 1];
+
+          setCurrent(current + 1);
+          setSelected(answers[nextQ.id]?.option || null);
+        }
+
+        return 0;
+      }
+
+      return prev - 1;
+    });
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, [current, answers, navigate]);
 
   function choose(option) {
-    const elapsed = (Date.now() - startedAt) / 1000;
-    setSelected(option.id);
-    setAnswers(prev => ({ ...prev, [q.id]: { option: option.id, fast: elapsed < 1.5 } }));
-  }
+  setSelected(option.id);
+
+  setAnswers(prev => ({
+    ...prev,
+    [q.id]: {
+      option: option.id
+    }
+  }));
+}
 
   function next() {
     if (!selected) return;
@@ -220,11 +387,13 @@ function Assessment() {
   }
 
   function previous() {
-    if (current === 0) return;
-    const prevQ = questions[current - 1];
-    setCurrent(current - 1);
-    setSelected(answers[prevQ.id] || null);
-  }
+  if (current === 0) return;
+
+  const prevQ = questions[current - 1];
+
+  setCurrent(current - 1);
+  setSelected(answers[prevQ.id]?.option || null);
+}
 
   return (
     <div className="assessment-page section">
@@ -297,7 +466,7 @@ function Processing() {
 
 function Results() {
   const navigate = useNavigate();
-  const { results } = useNavitry();
+  const { results,resetAssessment } = useNavitry();
 
   if (!results) return <RedirectCard message="Complete the assessment to see your profile." to="/assessment" />;
 
@@ -341,6 +510,7 @@ function Results() {
 
         <div className="results-bottom">
           <Link className="btn btn-secondary" to="/compare">Compare My Top 3</Link>
+          <Link className="btn btn-secondary" to="/instructions">Retake Assessment</Link>
         </div>
       </div>
     </div>
