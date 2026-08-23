@@ -82,8 +82,6 @@ function Navbar() {
           {open ? <X/> : <Menu/>}
         </button>
         <nav className={open ? "nav-links open" : "nav-links"}>
-          <NavLink to="/#how-it-works" onClick={() => setOpen(false)}>How It Works</NavLink>
-          <NavLink to="/#about" onClick={() => setOpen(false)}>About</NavLink>
           <Link className="nav-cta" to="/instructions" onClick={() => setOpen(false)}>Start Exploring <ArrowRight size={16}/></Link>
         </nav>
       </div>
