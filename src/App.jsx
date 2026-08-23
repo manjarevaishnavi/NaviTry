@@ -95,7 +95,7 @@ function Home() {
     <>
       <section className="hero section">
         <div className="container hero-grid">
-          <div className="hero-copy">
+          <div className="hero-copy fade-up">
             <div className="eyebrow"><Sparkles size={15}/> Career exploration, not career pressure</div>
             <h1>Don't choose your future.<br/><em>Navigate it.</em></h1>
             <p className="hero-text">
