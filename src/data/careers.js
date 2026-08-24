@@ -37,7 +37,7 @@ const careers = [
       "Full-Stack Developer",
       "Software Engineer"
     ],
-    "description": "Software Engineer is a career path where you apply programming, problem-solving, debugging to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Software engineers build the apps, websites, and software systems people use every day. You might write code, fix bugs, test new features, and turn an idea into something people can actually use. A lot of the work involves breaking problems down, figuring out why something isn't working, and finding better ways to make technology work.",
     "responsibilities": [
       "Use programming to work on real problems",
       "Apply problem-solving in practical situations",
@@ -50,16 +50,14 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: build a small app.",
-      "title": "Build a small app",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Build a small app",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Build a small app.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
+  "intro": "Imagine a student club needs a simple way to keep track of its members.",
+  "title": "Plan a simple club app",
+  "instructions": "Think like a software engineer. Before writing any code, figure out what the app needs to do and how a user would interact with it.",
+  "challenge": "Design the basic idea for a small app that lets a club keep track of its members.",
+  "steps": [
+    "List three things the app should allow users to do.",
+    "Sketch what the main screen could look like.",
+    "Describe what should happen when someone adds a new member."
       ]
     }
   },
@@ -101,7 +99,7 @@ const careers = [
       "Machine Learning Scientist",
       "Applied AI Engineer"
     ],
-    "description": "AI/ML Engineer is a career path where you apply machine learning, programming, mathematics to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "AI/ML engineers build systems that can learn from data and use that learning to make predictions or decisions. You might train and test models, work with large amounts of data, write code, and keep improving your approach when the results aren't quite right. The work combines programming, mathematics, experimentation, and curiosity about how intelligent systems can be built.",
     "responsibilities": [
       "Use machine learning to work on real problems",
       "Apply programming in practical situations",
@@ -114,18 +112,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: train a simple ml model.",
-      "title": "Train a simple ML model",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Train a simple ML model",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Train a simple ML model.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine your college wants a system that can predict which students might need extra academic support.",
+  "title": "Plan a simple prediction system",
+  "instructions": "Think like an AI or machine learning engineer. Decide what information a system would need and how it could use that information to make a prediction.",
+  "challenge": "Design the basic idea for an AI system that could identify students who may need additional support.",
+  "steps": [
+    "List three types of data the system could use.",
+    "Explain what the system would try to predict.",
+    "Think of one problem or risk that could make the prediction unfair or inaccurate."
+  ]
+}
   },
   {
     "id": "data-scientist",
@@ -165,7 +161,7 @@ const careers = [
       "Quantitative Analyst",
       "Data Science Consultant"
     ],
-    "description": "Data Scientist is a career path where you apply statistics, python, data analysis to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Data scientists use data to understand problems, find patterns, and help people make better decisions. You might clean messy datasets, analyse information, build models, look for trends, and explain what your findings mean. A big part of the job is turning large amounts of information into insights that are actually useful.",
     "responsibilities": [
       "Use statistics to work on real problems",
       "Apply python in practical situations",
@@ -178,18 +174,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze a real dataset.",
-      "title": "Analyze a real dataset",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze a real dataset",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze a real dataset.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine your college wants to understand why students are using the library less than before.",
+  "title": "Find the story hidden in the data",
+  "instructions": "Think like a data scientist. Decide what information you would want to collect and what patterns could help explain the problem.",
+  "challenge": "Come up with a simple plan to investigate why library usage might be falling.",
+  "steps": [
+    "List three pieces of data you would want to collect.",
+    "Think of two possible patterns that could explain the drop.",
+    "Write one conclusion you could make if the data supported your idea."
+  ]
+}
   },
   {
     "id": "data-analyst",
@@ -230,7 +224,8 @@ const careers = [
       "Product Analyst",
       "Analytics Consultant"
     ],
-    "description": "Data Analyst is a career path where you apply sql, excel, visualization to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Data analysts help people make sense of information and use it to answer practical questions. You might work with spreadsheets or databases, clean data, spot trends, create charts or reports, and explain what the numbers are showing. The work is often about asking the right questions and finding useful evidence in the data.",
+
     "responsibilities": [
       "Use sql to work on real problems",
       "Apply excel in practical situations",
@@ -243,18 +238,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze a public dataset and create a dashboard.",
-      "title": "Analyze a public dataset and create a dashboard",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze a public dataset and create a dashboard",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze a public dataset and create a dashboard.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a college event had a much lower turnout than expected.",
+  "title": "Investigate what happened",
+  "instructions": "Think like a data analyst. Use information to figure out what may have affected attendance and what could be improved next time.",
+  "challenge": "Decide what information you would analyze to understand why fewer students attended the event.",
+  "steps": [
+    "List three pieces of information you would want to examine.",
+    "Write down two possible reasons for the low turnout.",
+    "Suggest one change based on what the data might show."
+  ]
+}
   },
   {
     "id": "cybersecurity-analyst",
@@ -293,7 +286,7 @@ const careers = [
       "Threat Analyst",
       "Cybersecurity Engineer"
     ],
-    "description": "Cybersecurity Analyst is a career path where you apply security analysis, investigation, networking to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Cybersecurity analysts help protect computers, networks, applications, and information from security threats. You might monitor systems for suspicious activity, investigate possible attacks, identify weaknesses, and help prevent future incidents. If you enjoy solving problems and thinking about how systems could be attacked or protected, this can be an interesting path.",
     "responsibilities": [
       "Use security analysis to work on real problems",
       "Apply investigation in practical situations",
@@ -306,18 +299,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: try a beginner security lab.",
-      "title": "Try a beginner security lab",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Try a beginner security lab",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Try a beginner security lab.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a student suddenly receives an email asking them to urgently reset their college password.",
+  "title": "Investigate a suspicious message",
+  "instructions": "Think like a cybersecurity analyst. Look for clues that could help you decide whether the message is trustworthy or suspicious.",
+  "challenge": "Identify possible warning signs in a suspicious email and decide what should be checked before taking action.",
+  "steps": [
+    "List three signs that might make an email suspicious.",
+    "Explain one safe way to verify whether the message is real.",
+    "Describe what you would do if you believed it was a phishing attempt."
+  ]
+}
   },
   {
     "id": "cloud-engineer",
@@ -356,7 +347,7 @@ const careers = [
       "DevOps Engineer",
       "Site Reliability Engineer"
     ],
-    "description": "Cloud Engineer is a career path where you apply cloud platforms, networking, infrastructure to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Cloud engineers build and manage the technology that allows websites, apps, and online services to run reliably. You might work with servers, networks, storage, security, and automation, mostly through cloud platforms rather than physical machines. A lot of the work involves making systems reliable, secure, and able to handle more users as they grow.",
     "responsibilities": [
       "Use cloud platforms to work on real problems",
       "Apply networking in practical situations",
@@ -369,18 +360,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: deploy a small cloud application.",
-      "title": "Deploy a small cloud application",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Deploy a small cloud application",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Deploy a small cloud application.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a college app suddenly becomes very slow because thousands of students are trying to use it at the same time.",
+  "title": "Keep the service running",
+  "instructions": "Think like a cloud engineer. Consider what the system would need so it can handle more users without completely breaking down.",
+  "challenge": "Come up with a simple plan for making the app more reliable when usage suddenly increases.",
+  "steps": [
+    "Identify one reason the app might become slow.",
+    "Suggest two ways the system could handle more users.",
+    "Explain why reliability matters even when the app is not experiencing heavy traffic."
+  ]
+}
   },
   {
     "id": "robotics-engineer",
@@ -421,7 +410,7 @@ const careers = [
       "Embedded Engineer",
       "Controls Engineer"
     ],
-    "description": "Robotics Engineer is a career path where you apply robotics, electronics, programming to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Robotics engineers combine software, electronics, and mechanical systems to build and improve robots and automated machines. You might work with sensors, motors, electronics, programming, and physical prototypes, then test and improve how the system works. It can be a good path if you're interested in creating technology you can actually see and interact with.",
     "responsibilities": [
       "Use robotics to work on real problems",
       "Apply electronics in practical situations",
@@ -434,18 +423,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: build a simple robot.",
-      "title": "Build a simple robot",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Build a simple robot",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Build a simple robot.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine your college wants a small robot that can carry books from one room to another.",
+  "title": "Design a helpful robot",
+  "instructions": "Think like a robotics engineer. Consider what the robot needs to sense, how it should move, and what could go wrong along the way.",
+  "challenge": "Plan the basic features of a robot that can safely move books between two locations.",
+  "steps": [
+    "List three things the robot would need to sense.",
+    "Describe how the robot could move from one place to another.",
+    "Identify one problem the robot might face and how you could solve it."
+  ]
+}
   },
   {
     "id": "product-manager",
@@ -486,7 +473,7 @@ const careers = [
       "Growth Product Manager",
       "Technical Product Manager"
     ],
-    "description": "Product Manager is a career path where you apply strategy, communication, prioritization to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Product managers help teams decide what to build, why to build it, and what should be worked on first. You might talk to users, understand their problems, work with designers and developers, study feedback, and help set priorities. The role sits between users, technology, and business, so a big part of the job is bringing different perspectives together.",
     "responsibilities": [
       "Use strategy to work on real problems",
       "Apply communication in practical situations",
@@ -499,18 +486,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: create a product requirements document.",
-      "title": "Create a product requirements document",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Create a product requirements document",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Create a product requirements document.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine students keep complaining that it is difficult to find important college announcements.",
+  "title": "Decide what to build",
+  "instructions": "Think like a product manager. Your job is to understand the problem before deciding what solution would actually be worth building.",
+  "challenge": "Plan a simple feature or product idea that could make important announcements easier for students to find.",
+  "steps": [
+    "Write down the main problem students are facing.",
+    "List two features that could help solve it.",
+    "Decide which feature should be built first and explain why."
+  ]
+}
   },
   {
     "id": "business-analyst",
@@ -550,7 +535,7 @@ const careers = [
       "Business Consultant",
       "Process Analyst"
     ],
-    "description": "Business Analyst is a career path where you apply requirements analysis, data, communication to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Business analysts study how a business or organisation works and look for ways it could work better. You might talk to employees or customers, analyse information, identify where a process is going wrong, and help turn a messy problem into a clearer plan or requirement. You don't necessarily build the final solution; your job is often to understand the problem and help others solve it.",
     "responsibilities": [
       "Use requirements analysis to work on real problems",
       "Apply data in practical situations",
@@ -563,18 +548,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze a fictional business problem.",
-      "title": "Analyze a fictional business problem",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze a fictional business problem",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze a fictional business problem.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine students have to visit three different offices just to complete one simple college process.",
+  "title": "Fix a frustrating process",
+  "instructions": "Think like a business analyst. Look at how the process currently works and identify where people are wasting time or getting stuck.",
+  "challenge": "Suggest a simpler way to complete the process.",
+  "steps": [
+    "Write down the current steps a student has to follow.",
+    "Identify two parts that seem unnecessary or confusing.",
+    "Suggest one improved version of the process."
+  ]
+}
   },
   {
     "id": "project-manager",
@@ -614,7 +597,7 @@ const careers = [
       "Delivery Manager",
       "Operations Manager"
     ],
-    "description": "Project Manager is a career path where you apply planning, organization, leadership to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Project managers help teams turn a plan into something that actually gets finished. You might organise tasks, track deadlines and budgets, coordinate different people, solve problems when things go off track, and keep everyone clear on what needs to happen next. Much of the work is about keeping people, resources, and moving parts organised.",
     "responsibilities": [
       "Use planning to work on real problems",
       "Apply organization in practical situations",
@@ -627,18 +610,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: plan a small event/project.",
-      "title": "Plan a small event/project",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Plan a small event/project",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Plan a small event/project.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine your team has only two weeks left to organize a college event, but several important tasks are still unfinished.",
+  "title": "Get the project back on track",
+  "instructions": "Think like a project manager. Decide what needs attention first and how you would help the team move forward.",
+  "challenge": "Create a simple plan for organizing the remaining work before the event.",
+  "steps": [
+    "List the three most important tasks.",
+    "Decide which task should be completed first.",
+    "Think of one problem that could delay the project and how you would handle it."
+  ]
+}
   },
   {
     "id": "entrepreneur",
@@ -678,7 +659,7 @@ const careers = [
       "Business Owner",
       "Product Entrepreneur"
     ],
-    "description": "Entrepreneur is a career path where you apply innovation, leadership, decision-making to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Entrepreneurs turn ideas or identified problems into products, services, or businesses. You might research a problem, talk to potential customers, test an idea, build an early version, find ways to make money, and decide what to do when things don't go as planned. The work involves a lot of uncertainty and responsibility, but it also gives you the opportunity to create your own direction.",
     "responsibilities": [
       "Use innovation to work on real problems",
       "Apply leadership in practical situations",
@@ -691,18 +672,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: create and validate a small product idea.",
-      "title": "Create and validate a small product idea",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Create and validate a small product idea",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Create and validate a small product idea.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you notice that students on your campus keep struggling with the same everyday problem.",
+  "title": "Turn a problem into an idea",
+  "instructions": "Think like an entrepreneur. Start with a real problem and explore whether there could be a useful solution.",
+  "challenge": "Come up with a simple idea that could solve a problem students regularly face.",
+  "steps": [
+    "Describe the problem you noticed.",
+    "Explain your possible solution.",
+    "Think of one way you could find out whether people would actually use it."
+  ]
+}
   },
   {
     "id": "financial-analyst",
@@ -741,7 +720,7 @@ const careers = [
       "FP&A Analyst",
       "Risk Analyst"
     ],
-    "description": "Financial Analyst is a career path where you apply financial modelling, statistics, excel to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Financial analysts use financial information and research to understand how a company, market, or investment is performing. You might compare financial statements, analyse trends, build financial models, research markets, and help people make decisions about money. The work involves a lot of structured thinking, numbers, research, and attention to detail.",
     "responsibilities": [
       "Use financial modelling to work on real problems",
       "Apply statistics in practical situations",
@@ -754,18 +733,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze a company's financial statements.",
-      "title": "Analyze a company's financial statements",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze a company's financial statements",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze a company's financial statements.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a student organization has a limited budget and needs to decide how to spend its money.",
+  "title": "Make a budget decision",
+  "instructions": "Think like a financial analyst. Compare the available options and use numbers to decide what makes the most sense.",
+  "challenge": "Create a simple plan for deciding how the organization should use its budget.",
+  "steps": [
+    "List three possible expenses.",
+    "Decide which expenses are most important.",
+    "Explain how you would compare the options before making a final decision."
+  ]
+}
   },
   {
     "id": "management-consultant",
@@ -805,7 +782,7 @@ const careers = [
       "Business Consultant",
       "Transformation Consultant"
     ],
-    "description": "Management Consultant is a career path where you apply research, analysis, strategy to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Management consultants help organisations understand and solve difficult business problems. You might research an industry, analyse data, interview people, compare possible solutions, and present recommendations to a client. Projects can change from one problem or industry to another, so the work often involves learning quickly and adapting your thinking.",
     "responsibilities": [
       "Use research to work on real problems",
       "Apply analysis in practical situations",
@@ -818,18 +795,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: solve a business case.",
-      "title": "Solve a business case",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Solve a business case",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Solve a business case.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a small company is losing customers, but no one is sure exactly why.",
+  "title": "Investigate a business problem",
+  "instructions": "Think like a management consultant. Break a large, messy problem into smaller questions that can be investigated.",
+  "challenge": "Create a simple plan for figuring out why the company might be losing customers.",
+  "steps": [
+    "Write down three possible reasons customers might be leaving.",
+    "List information you would need to investigate each reason.",
+    "Choose which problem you would investigate first and explain why."
+  ]
+}
   },
   {
     "id": "marketing-strategist",
@@ -869,7 +844,7 @@ const careers = [
       "Growth Marketer",
       "Digital Marketing Strategist"
     ],
-    "description": "Marketing Strategist is a career path where you apply market research, creativity, communication to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Marketing strategists think about how a product, service, or idea should reach and connect with the people it's meant for. You might research an audience, study competitors, develop campaign ideas, decide what message to communicate, and help choose the best channels to reach people. The work combines creativity with research, communication, and business thinking.",
     "responsibilities": [
       "Use market research to work on real problems",
       "Apply creativity in practical situations",
@@ -882,18 +857,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: create a campaign strategy.",
-      "title": "Create a campaign strategy",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Create a campaign strategy",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Create a campaign strategy.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine your college is launching a new student event, but hardly anyone knows about it.",
+  "title": "Plan a campaign that gets attention",
+  "instructions": "Think like a marketing strategist. Consider who you want to reach, what might interest them, and how your message should be communicated.",
+  "challenge": "Create a simple marketing idea to encourage more students to attend the event.",
+  "steps": [
+    "Describe the group of students you want to reach.",
+    "Write one message that might catch their attention.",
+    "Choose two places or platforms where you would promote the event."
+  ]
+}
   },
   {
     "id": "ux-ui-designer",
@@ -933,7 +906,7 @@ const careers = [
       "Product Designer",
       "Interaction Designer"
     ],
-    "description": "UX/UI Designer is a career path where you apply visual design, prototyping, user experience to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "UX/UI designers work on how digital products look and feel and how easy they are to use. You might sketch layouts, create prototypes, design interfaces, test different ideas, and figure out why users are getting stuck or frustrated. The work combines visual design with problem-solving and a strong focus on how real people interact with technology.",
     "responsibilities": [
       "Use visual design to work on real problems",
       "Apply prototyping in practical situations",
@@ -946,18 +919,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: redesign an existing app.",
-      "title": "Redesign an existing app",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Redesign an existing app",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Redesign an existing app.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you are using a food-ordering app and the checkout screen is confusing and frustrating.",
+  "title": "Redesign a frustrating screen",
+  "instructions": "Think like a UX/UI designer. Your goal is to make the experience easier and more intuitive for someone using the app.",
+  "challenge": "Redesign the checkout screen so users can quickly understand their order and complete the process.",
+  "steps": [
+    "List two things that could make the current screen confusing.",
+    "Sketch a simpler version of the screen.",
+    "Explain why your changes would make the experience easier."
+  ]
+}
   },
   {
     "id": "ux-researcher",
@@ -998,7 +969,7 @@ const careers = [
       "Design Researcher",
       "Customer Insights Researcher"
     ],
-    "description": "UX Researcher is a career path where you apply interviews, research, observation to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "UX researchers try to understand what people need, how they behave, and what problems they experience when using a product. You might interview users, run usability tests, observe how people interact with an app or website, analyse feedback, and share insights with designers and developers. The goal is to turn what you learn about users into information the product team can act on.",
     "responsibilities": [
       "Use interviews to work on real problems",
       "Apply research in practical situations",
@@ -1011,18 +982,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: interview 3 users about an app.",
-      "title": "Interview 3 users about an app",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Interview 3 users about an app",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Interview 3 users about an app.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine students keep abandoning a college website before completing an important form.",
+  "title": "Find out why users are struggling",
+  "instructions": "Think like a UX researcher. Instead of immediately guessing the solution, focus first on understanding what users are actually experiencing.",
+  "challenge": "Plan a simple way to investigate why students are abandoning the form.",
+  "steps": [
+    "Write three questions you could ask students.",
+    "Identify one behaviour you would want to observe.",
+    "Describe one pattern that could help explain the problem."
+  ]
+}
   },
   {
     "id": "graphic-designer",
@@ -1061,7 +1030,7 @@ const careers = [
       "Visual Designer",
       "Art Director"
     ],
-    "description": "Graphic Designer is a career path where you apply visual design, typography, branding to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Graphic designers turn ideas and messages into visual materials that communicate something clearly. You might create logos, posters, social media graphics, advertisements, presentations, packaging, or other branding materials while thinking about colour, typography, layout, and style. The work combines creativity with the challenge of communicating a message visually.",
     "responsibilities": [
       "Use visual design to work on real problems",
       "Apply typography in practical situations",
@@ -1074,18 +1043,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: design a poster/brand identity.",
-      "title": "Design a poster/brand identity",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Design a poster/brand identity",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Design a poster/brand identity.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine your college is organizing a major event and needs a poster that students will actually notice.",
+  "title": "Create a visual idea",
+  "instructions": "Think like a graphic designer. Decide what information matters most and how you can make it visually clear and interesting.",
+  "challenge": "Plan the design for a poster promoting the event.",
+  "steps": [
+    "Write the three most important pieces of information the poster needs.",
+    "Choose a visual style or mood for the design.",
+    "Sketch a rough layout showing where the main elements would go."
+  ]
+}
   },
   {
     "id": "content-strategist",
@@ -1125,7 +1092,7 @@ const careers = [
       "Editorial Strategist",
       "Brand Content Manager"
     ],
-    "description": "Content Strategist is a career path where you apply writing, audience research, storytelling to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Content strategists plan what a brand or organisation should communicate, who it should communicate with, and how that message should be delivered. You might research an audience, plan articles or social media content, shape a brand's voice, organise content, and decide which ideas are worth sharing. The work combines writing, research, creativity, communication, and an understanding of people.",
     "responsibilities": [
       "Use writing to work on real problems",
       "Apply audience research in practical situations",
@@ -1138,18 +1105,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: create a content plan for a brand.",
-      "title": "Create a content plan for a brand",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Create a content plan for a brand",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Create a content plan for a brand.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a college club has interesting activities, but its social media posts are getting very little attention.",
+  "title": "Plan better content",
+  "instructions": "Think like a content strategist. Consider what your audience cares about and what type of content might make them want to pay attention.",
+  "challenge": "Create a simple content plan to help the club connect with more students.",
+  "steps": [
+    "Describe the audience you want to reach.",
+    "Come up with three content ideas.",
+    "Choose one idea and explain why students might find it interesting."
+  ]
+}
   },
   {
     "id": "technical-writer",
@@ -1188,7 +1153,8 @@ const careers = [
       "Content Designer",
       "Information Developer"
     ],
-    "description": "Technical Writer is a career path where you apply writing, research, technical communication to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Technical writers take complicated information and turn it into clear, useful instructions or explanations. You might write software documentation, user guides, help articles, manuals, or other technical content while working with subject-matter experts. The challenge is understanding something complex yourself and then explaining it clearly without making the reader feel lost.",
+
     "responsibilities": [
       "Use writing to work on real problems",
       "Apply research in practical situations",
@@ -1201,18 +1167,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: write documentation for an app.",
-      "title": "Write documentation for an app",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Write documentation for an app",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Write documentation for an app.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you have to explain how to use a new college portal to someone who has never used it before.",
+  "title": "Make something complicated easier",
+  "instructions": "Think like a technical writer. Your goal is to understand the process and explain it clearly enough that someone else can follow it.",
+  "challenge": "Write a short step-by-step guide for completing one task on the portal.",
+  "steps": [
+    "Choose one task to explain.",
+    "Write the steps in the order a new user would follow them.",
+    "Read your instructions and remove anything that might confuse a beginner."
+  ]
+}
   },
   {
     "id": "animator-3d-artist",
@@ -1251,7 +1215,7 @@ const careers = [
       "Motion Designer",
       "3D Generalist"
     ],
-    "description": "Animator / 3D Artist is a career path where you apply animation, 3d modelling, storytelling to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Animators and 3D artists create moving visuals, characters, objects, and digital environments. You might create animations, build 3D models, work on games, films, advertisements, or other digital experiences, and repeatedly refine your work until it looks and moves the way you want. The work can be highly creative, but it also requires patience, technical skill, and attention to detail.",
     "responsibilities": [
       "Use animation to work on real problems",
       "Apply 3d modelling in practical situations",
@@ -1264,18 +1228,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: create a short 3d/animation scene.",
-      "title": "Create a short 3D/animation scene",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Create a short 3D/animation scene",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Create a short 3D/animation scene.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you are helping create a short animated scene for a game or film.",
+  "title": "Bring an idea to life",
+  "instructions": "Think like an animator or 3D artist. Start by imagining how a character, object, or scene should look and move.",
+  "challenge": "Plan a short animated scene involving a character or object.",
+  "steps": [
+    "Describe what happens in the scene.",
+    "Sketch or describe the main character or object.",
+    "Explain how it would move or change during the scene."
+  ]
+}
   },
   {
     "id": "research-scientist",
@@ -1314,7 +1276,7 @@ const careers = [
       "R&D Scientist",
       "Lab Scientist"
     ],
-    "description": "Research Scientist is a career path where you apply research, experimentation, statistics to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Research scientists investigate questions that don't always have obvious answers. You might design experiments, collect and analyse evidence, test hypotheses, review previous research, and change your approach when the results don't match what you expected. The work is centred on asking good questions, testing ideas, and building reliable knowledge.",
     "responsibilities": [
       "Use research to work on real problems",
       "Apply experimentation in practical situations",
@@ -1327,18 +1289,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: conduct a small experiment.",
-      "title": "Conduct a small experiment",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Conduct a small experiment",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Conduct a small experiment.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you notice something unusual and want to find out whether there is a real pattern behind it.",
+  "title": "Turn curiosity into an investigation",
+  "instructions": "Think like a research scientist. Start with a question, make a possible explanation, and decide how you could test it.",
+  "challenge": "Design a simple investigation for a question you are curious about.",
+  "steps": [
+    "Write one question you want to investigate.",
+    "Suggest one possible explanation or hypothesis.",
+    "Describe what evidence or experiment could help test your idea."
+  ]
+}
   },
   {
     "id": "environmental-scientist",
@@ -1377,7 +1337,7 @@ const careers = [
       "Sustainability Analyst",
       "Ecological Researcher"
     ],
-    "description": "Environmental Scientist is a career path where you apply environmental analysis, fieldwork, research to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Environmental scientists investigate problems affecting the natural environment and how those problems affect people. You might analyse environmental data, conduct fieldwork, study pollution, water quality or ecosystems, and help organisations or governments understand and address environmental problems. Depending on the role, you may spend time both in the field and working with data or reports.",
     "responsibilities": [
       "Use environmental analysis to work on real problems",
       "Apply fieldwork in practical situations",
@@ -1390,18 +1350,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze local environmental data.",
-      "title": "Analyze local environmental data",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze local environmental data",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze local environmental data.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you are an environmental scientist trying to figure out why a nearby river has suddenly become polluted.",
+  "title": "Investigate an environmental problem",
+  "instructions": "Think like an environmental scientist. Your job is to come up with possible explanations and work out what evidence you would need before deciding what is really happening.",
+  "challenge": "Think of three possible causes of the river pollution and identify what information you would need to investigate them.",
+  "steps": [
+    "Come up with three possible causes of the pollution.",
+    "For each cause, write down what information or evidence you would want to collect.",
+    "Think about which cause you would investigate first and explain why."
+  ]
+}
   },
   {
     "id": "biomedical-researcher",
@@ -1440,7 +1398,7 @@ const careers = [
       "Clinical Research Associate",
       "Translational Researcher"
     ],
-    "description": "Biomedical Researcher is a career path where you apply biology, laboratory research, experimentation to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Biomedical researchers investigate questions about the human body, diseases, treatments, and health. You might work in a laboratory, design experiments, study biological data, test possible explanations, and analyse the results. The work can be slow and detailed, but the research can contribute to a better understanding of diseases and possible treatments.",
     "responsibilities": [
       "Use biology to work on real problems",
       "Apply laboratory research in practical situations",
@@ -1453,18 +1411,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: research a biomedical topic and design an experiment.",
-      "title": "Research a biomedical topic and design an experiment",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Research a biomedical topic and design an experiment",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Research a biomedical topic and design an experiment.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine researchers are trying to understand why some people respond differently to the same treatment.",
+  "title": "Investigate a health question",
+  "instructions": "Think like a biomedical researcher. Consider what factors could affect the result and what evidence would help investigate the question.",
+  "challenge": "Plan a simple investigation into why two groups might respond differently to the same treatment.",
+  "steps": [
+    "List two possible factors that could affect the results.",
+    "Describe what information you would want to collect.",
+    "Explain how you would compare the two groups."
+  ]
+}
   },
   {
     "id": "economist",
@@ -1504,7 +1460,7 @@ const careers = [
       "Policy Analyst",
       "Research Economist"
     ],
-    "description": "Economist is a career path where you apply economics, statistics, modelling to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Economists study how people, businesses, and governments make decisions about money, resources, and trade-offs. You might analyse economic data, study markets, build models, conduct research, and try to understand why something is happening in the economy. Their work can be used to inform decisions about areas such as business, public policy, employment, prices, or development.",
     "responsibilities": [
       "Use economics to work on real problems",
       "Apply statistics in practical situations",
@@ -1517,18 +1473,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze an economic dataset.",
-      "title": "Analyze an economic dataset",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze an economic dataset",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze an economic dataset.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine prices at local shops are increasing and students are starting to change how they spend their money.",
+  "title": "Understand changing choices",
+  "instructions": "Think like an economist. Look at how changes in prices can affect the choices people make.",
+  "challenge": "Investigate how rising prices might change student spending habits.",
+  "steps": [
+    "Choose three things students regularly spend money on.",
+    "Predict how students might react if the prices increased.",
+    "Explain one pattern you would expect to see in their spending."
+  ]
+}
   },
   {
     "id": "psychologist",
@@ -1569,7 +1523,7 @@ const careers = [
       "Counsellor",
       "Organizational Psychologist"
     ],
-    "description": "Psychologist is a career path where you apply listening, research, observation to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Psychologists study how people think, feel, learn, and behave. Depending on their area of work, they might conduct research, assess behaviour, work with individuals or groups, or apply psychological knowledge to problems in areas such as health, education, work, or mental wellbeing. The career involves observation, communication, evidence-based thinking, and an understanding of human behaviour.",
     "responsibilities": [
       "Use listening to work on real problems",
       "Apply research in practical situations",
@@ -1582,18 +1536,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze a psychology case study.",
-      "title": "Analyze a psychology case study",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze a psychology case study",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze a psychology case study.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you notice that students react very differently to the same stressful situation, such as an upcoming exam.",
+  "title": "Explore differences in behaviour",
+  "instructions": "Think like a psychologist. Focus on understanding possible reasons why people may think, feel, or respond differently.",
+  "challenge": "Come up with a simple way to investigate why students might respond differently to exam stress.",
+  "steps": [
+    "List two possible factors that could affect someone's response.",
+    "Write three questions you could ask students.",
+    "Explain what kind of pattern you would look for."
+  ]
+}
   },
   {
     "id": "teacher-educator",
@@ -1633,7 +1585,7 @@ const careers = [
       "Academic Coordinator",
       "Education Consultant"
     ],
-    "description": "Teacher / Educator is a career path where you apply communication, teaching, empathy to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Teachers and educators help people learn and understand things they didn't understand before. You might explain difficult ideas in simpler ways, plan lessons or activities, answer questions, assess learning, and change your approach when something isn't clicking for a student. The work involves knowledge, communication, patience, preparation, and a genuine interest in helping people grow.",
     "responsibilities": [
       "Use communication to work on real problems",
       "Apply teaching in practical situations",
@@ -1646,18 +1598,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: teach a 10-minute topic.",
-      "title": "Teach a 10-minute topic",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Teach a 10-minute topic",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Teach a 10-minute topic.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you need to explain a difficult topic to someone who is completely confused by it.",
+  "title": "Teach it in a simpler way",
+  "instructions": "Think like an educator. Your goal is not just to know the answer yourself, but to help someone else understand it.",
+  "challenge": "Choose a topic you know and create a simple way to teach it to a beginner.",
+  "steps": [
+    "Choose one topic that can be difficult to understand.",
+    "Explain it using a simple example or comparison.",
+    "Think of one question or activity that could help you check whether the learner understood it."
+  ]
+}
   },
   {
     "id": "hr-specialist",
@@ -1696,7 +1646,7 @@ const careers = [
       "People Operations Specialist",
       "HR Business Partner"
     ],
-    "description": "HR Specialist is a career path where you apply communication, interviewing, conflict resolution to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "HR specialists help organisations manage and support their employees. You might help with recruitment, interviews, onboarding, employee concerns, workplace policies, training, performance, or resolving workplace issues. Much of the role involves communicating with people, handling sensitive information, understanding workplace policies, and finding practical ways to support both employees and the organisation.",
     "responsibilities": [
       "Use communication to work on real problems",
       "Apply interviewing in practical situations",
@@ -1709,18 +1659,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: design an interview process.",
-      "title": "Design an interview process",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Design an interview process",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Design an interview process.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine two members of a student team are having a disagreement that is starting to affect the whole group.",
+  "title": "Handle a people problem",
+  "instructions": "Think like an HR specialist. Consider how you would understand both sides and help create a fair and practical solution.",
+  "challenge": "Plan how you would approach the disagreement and help the team move forward.",
+  "steps": [
+    "Write down what information you would want to understand first.",
+    "Think of one question you could ask each person.",
+    "Suggest one possible way to resolve or reduce the conflict."
+  ]
+}
   },
   {
     "id": "lawyer",
@@ -1760,7 +1708,7 @@ const careers = [
       "Corporate Counsel",
       "Legal Consultant"
     ],
-    "description": "Lawyer is a career path where you apply research, reasoning, argumentation to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Lawyers help people and organisations understand and deal with legal issues. You might research laws, examine evidence, prepare legal documents, build arguments, negotiate with other parties, or explain complicated legal matters to a client. The work can involve a lot of reading and reasoning, but it also requires strong communication, attention to detail, and the ability to understand different sides of a problem.",
     "responsibilities": [
       "Use research to work on real problems",
       "Apply reasoning in practical situations",
@@ -1773,18 +1721,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: analyze a fictional legal case.",
-      "title": "Analyze a fictional legal case",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Analyze a fictional legal case",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Analyze a fictional legal case.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine two students disagree about what actually happened during an incident, and both believe their version is correct.",
+  "title": "Build an argument from evidence",
+  "instructions": "Think like a lawyer. Focus on the facts, the available evidence, and how you would support a clear argument.",
+  "challenge": "Choose one side of a simple disagreement and build an argument using the available information.",
+  "steps": [
+    "Write down the main claim you want to support.",
+    "List three pieces of evidence that could strengthen your argument.",
+    "Think of one argument the other side might make and how you would respond."
+  ]
+}
   },
   {
     "id": "public-relations-specialist",
@@ -1823,7 +1769,7 @@ const careers = [
       "Media Relations Specialist",
       "Publicist"
     ],
-    "description": "Public Relations Specialist is a career path where you apply communication, storytelling, networking to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Public relations specialists help organisations communicate with the public and manage how they are perceived. You might write announcements, plan communication campaigns, work with journalists or media organisations, respond to public attention, or find ways to tell an organisation's story. The role combines communication, relationship-building, creativity, and an understanding of public perception.",
     "responsibilities": [
       "Use communication to work on real problems",
       "Apply storytelling in practical situations",
@@ -1836,18 +1782,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: create a pr campaign.",
-      "title": "Create a PR campaign",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Create a PR campaign",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Create a PR campaign.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine a college event receives unexpected negative attention online because of a misunderstanding.",
+  "title": "Respond to a public situation",
+  "instructions": "Think like a public relations specialist. Consider what needs to be communicated, who needs to hear it, and how your response could affect public trust.",
+  "challenge": "Plan a simple response to address the misunderstanding.",
+  "steps": [
+    "Identify the main concern people have.",
+    "Write the key message you would want to communicate.",
+    "Choose one way or platform you would use to share the response."
+  ]
+}
   },
   {
     "id": "social-worker",
@@ -1888,7 +1832,7 @@ const careers = [
       "Case Worker",
       "Program Coordinator"
     ],
-    "description": "Social Worker is a career path where you apply empathy, communication, advocacy to real problems and projects. The route is best understood by trying a small piece of the work, not by reading a job title alone.",
+    "description": "Social workers support people who are dealing with difficult situations and connect them with practical help and services. You might work with individuals, families, schools, communities, hospitals, or support organisations, depending on your area. The work can involve advocacy, counselling or support, case management, and connecting people with resources, and it can be emotionally demanding while also having a direct impact on people's lives.",
     "responsibilities": [
       "Use empathy to work on real problems",
       "Apply communication in practical situations",
@@ -1901,18 +1845,16 @@ const careers = [
       "A small experiment only represents one slice of the profession"
     ],
     "activity": {
-      "intro": "Get a small taste of this career: volunteer/help with a community initiative.",
-      "title": "Volunteer/help with a community initiative",
-      "instructions": "You don't need professional-level knowledge. Focus on the way you approach the problem and how the work feels.",
-      "challenge": "Volunteer/help with a community initiative",
-      "steps": [
-        "Spend a few minutes understanding the problem behind: Volunteer/help with a community initiative.",
-        "Create a small first attempt using what you already know.",
-        "Notice what part of the task felt energizing or frustrating.",
-        "Write down one thing you would want to learn next.",
-        "Ask yourself: would I voluntarily try another task like this?"
-      ]
-    }
+  "intro": "Imagine you meet a student who is struggling with several problems and is not sure where to get help.",
+  "title": "Find a practical way forward",
+  "instructions": "Think like a social worker. Start by understanding the person's situation and considering what support or resources might actually help.",
+  "challenge": "Create a simple support plan for someone dealing with a difficult situation.",
+  "steps": [
+    "Identify two things you would want to understand about their situation.",
+    "List possible sources of support or resources.",
+    "Suggest one practical first step the person could take."
+  ]
+}
   }
 ]
 
