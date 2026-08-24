@@ -646,9 +646,18 @@ function Activity() {
             <h3>{career.activity.challenge}</h3>
             <ul>{career.activity.steps.map(s => <li key={s}><Check size={16}/>{s}</li>)}</ul>
           </div>
-          <button className="btn btn-primary activity-finish" onClick={() => { setDone(true); navigate(`/career/${career.id}/reflect`); }}>
-            I Finished <Check size={18}/>
-          </button>
+          <button
+  className="btn btn-primary activity-finish"
+  onClick={() => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSfDTvmKKvOiQ-VQ7e8YFOJI6iT7ghsAL5SA8YaIKyZ2JRo4ow/viewform?usp=publish-editor",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }}
+>
+  I Finished <Check size={18} />
+</button>
         </div>
       </div>
     </div>
@@ -726,34 +735,43 @@ function Compare() {
         <div className="compare-cards">
           {selected.map(c => <div className="compare-card" key={c.id}><span className="career-icon">{c.icon}</span><h3>{c.name}</h3><Link className="card-link" to={`/career/${c.id}`}>Explore route <ArrowRight size={16}/></Link></div>)}
         </div>
+
+        <div className="center-action">
+  <button
+    className="btn btn-primary"
+    onClick={() => navigate("/complete")}
+  >
+    Complete My Journey <ArrowRight size={17} />
+  </button>
+</div>
+
       </div>
     </div>
   );
 }
 
 function Feedback() {
-  const navigate = useNavigate();
-  const { feedback, setFeedback } = useNavitry();
-  const [rating, setRating] = useState(feedback?.rating || 0);
-  const [text, setText] = useState(feedback?.text || "");
-
-  function submit() {
-    setFeedback({ rating, text });
-    navigate("/complete");
-  }
-
   return (
     <div className="section feedback-page">
       <div className="container feedback-wrap">
         <div className="eyebrow">One last thing</div>
-        <h1>How accurate did your NaviTry results feel?</h1>
-        <p>Your feedback helps us make the experience better.</p>
+
+        <h1>How was your NaviTry experience?</h1>
+
+        <p>
+          Your feedback will help us improve NaviTry and make career
+          exploration more useful for students like you.
+        </p>
+
         <div className="feedback-card">
-          <div className="stars">{[1,2,3,4,5].map(n => <button key={n} onClick={() => setRating(n)} className={rating >= n ? "star active" : "star"}><Star fill={rating >= n ? "currentColor" : "none"}/></button>)}</div>
-          <div className="rating-labels"><span>Not accurate</span><span>Very accurate</span></div>
-          <label>What did you think of your results? <span>Optional</span></label>
-          <textarea value={text} onChange={e => setText(e.target.value)} placeholder="Anything you'd like us to know?" rows="5"/>
-          <button className="btn btn-primary full" disabled={!rating} onClick={submit}>Submit Feedback <ArrowRight size={17}/></button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfDTvmKKvOiQ-VQ7e8YFOJI6iT7ghsAL5SA8YaIKyZ2JRo4ow/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary full"
+          >
+            Give Us Your Feedback <ArrowRight size={17} />
+          </a>
         </div>
       </div>
     </div>
@@ -771,11 +789,16 @@ function Complete() {
         <h1>You don't have to figure out your entire future today.</h1>
         <p>You just need to know what to explore next.</p>
         <div className="complete-actions">
+          <button
+  className="btn btn-primary"
+  onClick={() => navigate("/feedback")}
+>
+  Give Feedback <ArrowRight size={17} />
+</button>
           <button className="btn btn-primary" onClick={() => navigate("/results")}>View My Results <ArrowRight size={17}/></button>
           <button className="btn btn-secondary" onClick={() => navigate(results ? `/career/${results.matches[0].id}` : "/assessment")}>Explore Another Career <ArrowRight size={17}/></button>
         </div>
-        <button className="share-btn" onClick={() => navigator.clipboard?.writeText(window.location.href)}><Share2 size={16}/> Share My Results</button>
-        <button className="download-btn" onClick={() => window.print()}><Download size={16}/> Download My Future Map</button>
+        
       </div>
     </div>
   );
