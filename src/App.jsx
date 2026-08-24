@@ -608,7 +608,7 @@ function Career() {
         </div>
 
         <div className="try-banner">
-          <div><div className="eyebrow">Don't just read about it</div><h2>Try a small piece of the work.</h2><p>You've got about 10 minutes. See how the work actually feels.</p></div>
+          <div><div className="eyebrow">Don't just read about it</div></div>
           <Link className="btn btn-primary" to={`/career/${career.id}/activity`}>Try This Career <ArrowRight size={18}/></Link>
         </div>
       </div>
