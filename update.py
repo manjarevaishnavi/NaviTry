@@ -18,7 +18,7 @@ questions=[
 (13,"You notice that a business is losing customers. What would you rather do?","Analyze the data to identify where customers are dropping off.","analytical","Brainstorm a completely new customer experience.","creative"),
 (14,"You have to redesign a boring website.","Create a visually interesting concept that feels completely different.","creative","Talk to different users and design around what they actually need.","people"),
 (15,"Someone asks you for advice about a difficult decision.","Listen carefully and help them think through their options.","people","Help them turn the decision into a practical plan and start taking action.","handsOn"),
-(16,"You want to learn a new skill. Which approach sounds better?","Learn by doing projects immediately.","handsOn","Understand the underlying concepts before trying anything.","analytical"),
+(16,"You want to learn a new skill. Which approach sounds better?","Learn by creating something of your own immediately.","creative","Understand the underlying concepts before trying anything.","analytical"),
 (17,"You're given a difficult puzzle.","Break it into smaller pieces and systematically solve it.","analytical","Try an unusual perspective that nobody else has considered.","creative"),
 (18,"You're launching a new product. Which part sounds more exciting?","Come up with the product's identity, story and creative direction.","creative","Understand what different people want and build a message that connects with them.","people"),
 (19,"Your team has two very different opinions about how to proceed.","Help them understand each other's perspectives and reach an agreement.","people","Start testing different solutions and see which one actually works.","handsOn"),
