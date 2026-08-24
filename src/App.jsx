@@ -656,7 +656,7 @@ function Activity() {
     );
   }}
 >
-  I Finished <Check size={18} />
+  Feedback form <Check size={18} />
 </button>
         </div>
       </div>
@@ -735,15 +735,6 @@ function Compare() {
         <div className="compare-cards">
           {selected.map(c => <div className="compare-card" key={c.id}><span className="career-icon">{c.icon}</span><h3>{c.name}</h3><Link className="card-link" to={`/career/${c.id}`}>Explore route <ArrowRight size={16}/></Link></div>)}
         </div>
-
-        <div className="center-action">
-  <button
-    className="btn btn-primary"
-    onClick={() => navigate("/complete")}
-  >
-    Complete My Journey <ArrowRight size={17} />
-  </button>
-</div>
 
       </div>
     </div>
