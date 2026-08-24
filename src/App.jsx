@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useMemo, useState,useCallback } from "react";
+import React, {
+  createContext,
+  useContext,
+  useMemo,
+  useState,
+  useCallback,
+} from "react";
 import {
   Routes, Route, Link, NavLink, useNavigate, useLocation, useParams
 } from "react-router-dom";
@@ -9,6 +15,7 @@ import {
 } from "lucide-react";
 import questions from "./data/questions";
 import careers from "./data/careers";
+import { saveAssessmentResult } from "./services/assessmentService";
 
 const NavitryContext = createContext(null);
 
@@ -435,14 +442,27 @@ function Processing() {
   const { answers, setResults } = useNavitry();
 
   React.useEffect(() => {
-    const timer = setTimeout(() => {
-      const scores = calculateScores(answers);
-      const matches = getMatches(scores);
-      setResults({ scores, matches });
-      navigate("/results", { replace: true });
-    }, 2200);
-    return () => clearTimeout(timer);
-  }, []);
+  const timer = setTimeout(async () => {
+    const scores = calculateScores(answers);
+    const matches = getMatches(scores);
+
+    setResults({ scores, matches });
+
+    try {
+      await saveAssessmentResult({
+        answers,
+        scores,
+        matches
+      });
+    } catch (error) {
+      console.error("Failed to save assessment:", error);
+    }
+
+    navigate("/results", { replace: true });
+  }, 2200);
+
+  return () => clearTimeout(timer);
+}, []);
 
   return (
     <div className="processing-page section">
