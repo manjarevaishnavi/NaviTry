@@ -598,7 +598,7 @@ function Career() {
           <aside className="career-sidebar">
             <div className="side-card">
               <span className="label">WHERE CAN THIS PATH LEAD?</span>
-              {career.paths.map(x => <div className="path-row" key={x}><span>{x}</span><ChevronRight size={16}/></div>)}
+              {career.paths.map(x => <div className="path-row" key={x}><span>{x}</span></div>)}
             </div>
             <div className="side-card challenge">
               <span className="label">THINGS TO CONSIDER</span>
@@ -788,15 +788,39 @@ function RedirectCard({ message, to }) {
 function NotFound() { return <RedirectCard message="That route doesn't exist." to="/" />; }
 
 function calculateScores(answers) {
-  const raw = { analytical: 0, creative: 0, people: 0, handsOn: 0 };
+  const raw = {
+    analytical: 0,
+    creative: 0,
+    people: 0,
+    handsOn: 0
+  };
+
   questions.forEach(q => {
     const response = answers[q.id];
+
     if (!response) return;
+
     const answer = q.options.find(o => o.id === response.option);
-    if (answer) raw[answer.axis] += response.fast ? 1.25 : 1;
+
+    if (answer) {
+      raw[answer.axis] += 1;
+    }
   });
-  const maxPerAxis = 5 * 1.25;
-  return Object.fromEntries(Object.entries(raw).map(([axis, value]) => [axis, Math.min(100,Math.max(0, Math.round((value / maxPerAxis) * 100)))]));
+
+  const maxPerAxis = 5;
+
+  return Object.fromEntries(
+    Object.entries(raw).map(([axis, value]) => [
+      axis,
+      Math.min(
+        100,
+        Math.max(
+          0,
+          Math.round((value / maxPerAxis) * 100)
+        )
+      )
+    ])
+  );
 }
 
 function getMatches(scores) {
