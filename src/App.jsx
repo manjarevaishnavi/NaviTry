@@ -13,6 +13,7 @@ import {
   Clock3, Target, Lightbulb, Hammer, Users, Brain, RefreshCw,
   Star, Share2, Download, Menu, X
 } from "lucide-react";
+import { trackEvent } from "./analytics";
 import questions from "./data/questions";
 import careers from "./data/careers";
 import { saveAssessmentResult } from "./services/assessmentService";
@@ -336,12 +337,24 @@ function Assessment() {
   const [startedAt, setStartedAt] = useState(Date.now());
   const [secondsLeft, setSecondsLeft] = useState(20);
 
+  React.useEffect(() => {
+  trackEvent("assessment_started");
+}, []);
+
   const q = questions[current];
   const progress = ((current + 1) / questions.length) * 100;
 
   React.useEffect(() => {
   setSecondsLeft(20);
 }, [current]);
+
+  function completeAssessment() {
+    trackEvent("assessment_completed", {
+      total_questions: questions.length
+    });
+
+    navigate("/processing");;
+  }
 
   React.useEffect(() => {
   const timer = setInterval(() => {
@@ -351,7 +364,7 @@ function Assessment() {
 
         
         if (current === questions.length - 1) {
-          navigate("/processing");
+          completeAssessment();
         } else {
           const nextQ = questions[current + 1];
 
@@ -383,7 +396,7 @@ function Assessment() {
   function next() {
     if (!selected) return;
     if (current === questions.length - 1) {
-      navigate("/processing");
+      completeAssessment();
     } else {
       const nextQ = questions[current + 1];
       setCurrent(current + 1);
