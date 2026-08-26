@@ -575,6 +575,15 @@ function Career() {
   const career = careers.find(c => c.id === careerId);
   const { results } = useNavitry();
 
+  React.useEffect(() => {
+  if (career) {
+    trackEvent("career_viewed", {
+      career_name: career.name,
+      career_id: career.id
+    });
+  }
+}, [career]);
+
   if (!career) return <RedirectCard message="We couldn't find that career route." to="/results" />;
 
   return (
@@ -639,6 +648,16 @@ function Activity() {
   const career = careers.find(c => c.id === careerId);
   const [done, setDone] = useState(false);
 
+  React.useEffect(() => {
+  if (career) {
+    trackEvent("activity_tried", {
+      career_name: career.name,
+      career_id: career.id,
+      activity_title: career.activity.title
+    });
+  }
+}, [career]);
+
   if (!career) return <RedirectCard message="Career not found." to="/results" />;
 
   return (
@@ -662,6 +681,17 @@ function Activity() {
           <button
   className="btn btn-primary activity-finish"
   onClick={() => {
+    trackEvent("activity_completed", {
+      career_name: career.name,
+      career_id: career.id,
+      activity_title: career.activity.title
+    });
+
+    trackEvent("feedback_form_opened", {
+      source: "activity_page",
+      career_name: career.name
+    });
+
     window.open(
       "https://docs.google.com/forms/d/e/1FAIpQLSfDTvmKKvOiQ-VQ7e8YFOJI6iT7ghsAL5SA8YaIKyZ2JRo4ow/viewform?usp=publish-editor",
       "_blank",
@@ -669,7 +699,7 @@ function Activity() {
     );
   }}
 >
-  Feedback form <Check size={18} />
+  I Finished - Give Feedback <Check size={18} />
 </button>
         </div>
       </div>
